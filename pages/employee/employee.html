@@ -1,0 +1,49 @@
+<div>
+    <app-header text="Employee" back="true"></app-header>
+    <div class="card">
+        <ul class="table-view">
+            <li class="table-view-cell media">
+                <img class="media-object big pull-left" ng-src="pics/{{employee.firstName}}_{{employee.lastName}}.jpg"/>
+                <h1>{{employee.firstName}} {{employee.lastName}}</h1>
+                <p>{{employee.title}}</p>
+            </li>
+            <li class="table-view-cell media">
+                <a ng-href="tel:this.state.employee.officePhone}}" class="push-right">
+                    <span class="media-object pull-left icon icon-call"></span>
+                    <div class="media-body">
+                        Call Office
+                        <p>{{employee.officePhone}}</p>
+                    </div>
+                </a>
+            </li>
+            <li class="table-view-cell media">
+                <a ng-href="tel:{{employee.mobilePhone}}" class="push-right">
+                    <span class="media-object pull-left icon icon-call"></span>
+                    <div class="media-body">
+                        Call Mobile
+                        <p>{{employee.mobilePhone}}</p>
+                    </div>
+                </a>
+            </li>
+            <li class="table-view-cell media">
+                <a ng-href="sms:{{employee.mobilePhone}}" class="push-right">
+                    <span class="media-object pull-left icon icon-sms"></span>
+                    <div class="media-body">
+                        SMS
+                        <p>{{this.state.employee.mobilePhone}}</p>
+                    </div>
+                </a>
+            </li>
+            <li class="table-view-cell media">
+                <a ng-href="mailto:{{employee.email}}" class="push-right">
+                    <span class="media-object pull-left icon icon-email"></span>
+                    <div class="media-body">
+                        Email
+                        <p>{{employee.email}}</p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+

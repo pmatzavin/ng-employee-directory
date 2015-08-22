@@ -1,0 +1,16 @@
+<span>
+    <ul class="table-view">
+        <li ng-repeat="employee in employees" class="table-view-cell media" ng-class="{firstListChild:$index===0}">
+            <a ng-href="#employees/{{employee.id}}">
+                <img class="media-object small pull-left"
+                     ng-src="pics/{{employee.firstName}}_{{employee.lastName}}.jpg"/>
+                {{employee.firstName}} {{employee.lastName}}
+                <p>{{employee.title}}</p>
+            </a>
+        </li>
+    </ul>
+</span>
+
+
+
+
