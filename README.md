@@ -9,7 +9,7 @@ Currently it is not wrapped using cordova
 
 ## Run it
 
-- git `clone https://github.com/pmatzavin/ng-employee-directory`
+- `clone https://github.com/pmatzavin/ng-employee-directory`
 - `cd ng-employee-directory`
 - `bower install`
 - if you do not have http-server installed: `npm install -g http-server`
